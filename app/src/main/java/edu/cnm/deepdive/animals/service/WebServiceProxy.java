@@ -36,7 +36,7 @@ public interface WebServiceProxy {
           .addInterceptor(interceptor)
           .build();
       Retrofit retrofit = new Retrofit.Builder()
-          .baseUrl("https://ddc-java.services/animals")
+          .baseUrl("https://ddc-java.services/animals/")
           .addConverterFactory(GsonConverterFactory.create(gson))
           .client(client)
           .build();
